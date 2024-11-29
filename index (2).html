@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Promoção</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+  /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  header{
+    background-color: #050505;
+     color: #FFF;
+      padding: 20px;
+       display: flex;
+        align-items: center;
+         justify-content: space-between
+  }
+ 
+  header a img{
+    width: 20px;
+  }
+  /* Banner com efeito */
+  .banner {
+    position: relative;
+    height: 60vh;
+    background: url(img/Captura\ de\ tela\ 2024-11-29\ 145838.png) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Seção do formulário */
+  .form-section {
+    padding: 6rem;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .form-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #444;
+  }
+  
+  .promo-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .promo-form label {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .promo-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .promo-form button {
+    padding: 0.7rem;
+    border: none;
+    background: #050505;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .promo-form button:hover {
+    background: #464748;
+  }
+  
+  /* Responsividade */
+  /* A partir de telas menores (tablets e celulares) */
+  @media (max-width: 768px) {
+    /* Torna o banner menor para telas pequenas */
+    .banner {
+      height: 40vh;
+    }
+  
+    .banner-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .banner-content p {
+      font-size: 1rem;
+    }
+  
+    /* Ajusta o formulário */
+    .promo-form {
+      width: 90%;
+    }
+  
+    .promo-form button {
+      font-size: 0.9rem;
+    }
+  }
+  footer img{
+    width: 34px;
+  }
+  
+  
+</style>
+</head>
+<body>
+  <!-- Banner principal -->
+   <header>
+      <div class="logo" style="flex: 1;">
+          <img src="https://upload.wikimedia.org/wikipedia/pt/b/b4/Corinthians_simbolo.png" alt="Corinthians Logo" style="height: 50px;">
+      </div>
+      <nav style="flex: 2;">
+          <ul style="list-style: none; display: flex; justify-content: space-around; padding: 0;">
+              <li><a href="/" style="color: #FFF; text-decoration: none;">Início</a></li>
+              <li><a href="/noticias" style="color: #FFF; text-decoration: none;">Notícias</a></li>
+              <li><a href="/time" style="color: #FFF; text-decoration: none;">Time</a></li>
+              <li><a href="/jogos" style="color: #FFF; text-decoration: none;">Jogos</a></li>
+              <li><a href="/loja" style="color: #FFF; text-decoration: none;">Loja</a></li>
+          </ul>
+      </nav>
+      <div class="social-media" style="flex: 1; text-align: right;">
+          <a href="https://www.facebook.com/corinthians" style="color: #FFF; margin-left: 10px;"><img src="https://images.vexels.com/media/users/3/223136/isolated/lists/984f500cf9de4519b02b354346eb72e0-m-dias-sociais-do-cone-do-facebook.png" alt=""></a>
+          <a href="https://twitter.com/corinthians" style="color: #FFF; margin-left: 10px;"><img src="https://lh6.googleusercontent.com/proxy/f4z003TcawWlgEfv8qcD-_lO-3fHzi1k5W8TL3clXrkQpdKSG4mZ0bI7ZOLC2aSp9qDyRUA8OQUoR4oMKvFszgmxkA" alt=""></a>
+          <a href="https://www.instagram.com/corinthians" style="color: #FFF; margin-left: 10px;"><img src="https://cdn-icons-png.flaticon.com/256/2111/2111463.png" alt=""></a>
+      </div>
+  
+   </header>
+  <header class="banner">
+    <div class="overlay"></div>
+    <div class="banner-content">
+      <h1>Ganhe Seu Cupom Promocional!</h1>
+      <p>Descontos incríveis esperando por você. Inscreva-se agora!</p>
+    </div>
+  </header>
+
+  <!-- Formulário -->
+  <section class="form-section">
+    <h2>Solicite seu cupom</h2>
+    <form class="promo-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+      <label for="promo-code">Cupom:</label>
+      <input type="text" id="promo-code" name="promo-code" placeholder="Digite 'PROMO2024'" required>
+
+      <button type="submit">Solicitar Cupom</button>
+    </form>
+  </section>
+  <footer style="background-color: #000; color: #FFF; padding: 20px; text-align: center;">
+    <div class="footer-content" style="margin-bottom: 15px;">
+        <p>&copy; 2023 Sport Club Corinthians Paulista. Todos os direitos reservados.</p>
+        <ul style="list-style: none; padding: 0; display: inline-flex; gap: 15px;">
+            <li><a href="/termos-de-uso" style="color: #FFF; text-decoration: none;">Termos de Uso</a></li>
+            <li><a href="/politica-de-privacidade" style="color: #FFF; text-decoration: none;">Política de Privacidade</a></li>
+            <li><a href="/contato" style="color: #FFF; text-decoration: none;">Contato</a></li>
+        </ul>
+    </div>
+    <div class="social-media" style="margin-top: 15px;">
+        <a href="https://www.facebook.com/corinthians" style="color: #FFF; margin: 0 10px;"><img src="https://images.vexels.com/media/users/3/223136/isolated/lists/984f500cf9de4519b02b354346eb72e0-m-dias-sociais-do-cone-do-facebook.png" alt=""></a>
+        <a href="https://twitter.com/corinthians" style="color: #FFF; margin: 0 10px;"><img src="https://lh6.googleusercontent.com/proxy/f4z003TcawWlgEfv8qcD-_lO-3fHzi1k5W8TL3clXrkQpdKSG4mZ0bI7ZOLC2aSp9qDyRUA8OQUoR4oMKvFszgmxkA" alt=""></a>
+        <a href="https://www.instagram.com/corinthians" style="color: #FFF; margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/256/2111/2111463.png" alt=""></a>
+        <a href="https://www.youtube.com/corinthians" style="color: #FFF; margin: 0 10px;"><img src="https://logopng.com.br/logos/youtube-54.png" alt=""></a>
+    </div>
+</footer>
+</body>
+</html>
